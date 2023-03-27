@@ -1,0 +1,46 @@
+{
+  "collection": {
+    "version": "1.0",
+    "href": "http://images-api.nasa.gov/search?nasa_id=KSC-20200814-PH-SPX01_0001",
+    "items": [
+      {
+        "href": "https://images-assets.nasa.gov/image/KSC-20200814-PH-SPX01_0001/collection.json",
+        "data": [
+          {
+            "album": ["SpaceX_Crew_1"],
+            "description": "From left, Mission Specialist Shannon Walker, Pilot Victor Glover, Crew Dragon Commander Michael Hopkins – all NASA astronauts – and Japan Aerospace Exploration Agency (JAXA) astronaut and Mission Specialist Soichi Noguchi are seated in SpaceX’s Crew Dragon spacecraft during crew equipment interface training. Walker, Glover, Hopkins, and Noguchi will launch to the International Space Station on the agency’s SpaceX Crew-1 mission. This will be the first operational mission to the orbiting laboratory under NASA’s Commercial Crew Program following the agency’s certification of SpaceX’s crew transportation system. The crew will launch from Kennedy Space Center’s Launch Complex 39A in Florida.",
+            "title": "CCP SpaceX Crew-1 Portraits",
+            "photographer": "SpaceX",
+            "keywords": [
+              "NASA",
+              "CCP",
+              "Commercial Crew Program",
+              "Crew-1",
+              "Astronauts",
+              "SpaceX",
+              "Crew Portraits",
+              "Shannon Walker",
+              "Victor Glover",
+              "Mike Hopkins",
+              "Soichi Noguchi",
+              "JAXA"
+            ],
+            "location": "SpaceX Facility",
+            "nasa_id": "KSC-20200814-PH-SPX01_0001",
+            "media_type": "image",
+            "date_created": "2020-08-14T00:00:00Z",
+            "center": "KSC"
+          }
+        ],
+        "links": [
+          {
+            "href": "https://images-assets.nasa.gov/image/KSC-20200814-PH-SPX01_0001/KSC-20200814-PH-SPX01_0001~thumb.jpg",
+            "rel": "preview",
+            "render": "image"
+          }
+        ]
+      }
+    ],
+    "metadata": { "total_hits": 1 }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "codekeeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "project": "cd proxy && npm install && cd ../frontend && npm install && npm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
