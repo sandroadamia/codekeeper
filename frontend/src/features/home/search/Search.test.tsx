@@ -43,7 +43,7 @@ describe("Search component", () => {
 
   it("Explore button should be enabled when search term is inferred from query parameter", async () => {
     const { getByRole } = renderWithProviders(
-      <SearchComponent initialEntries={["/search?q=spacex"]} />,
+      <SearchComponent initialEntries={["/?q=spacex"]} />,
       { store }
     );
 
@@ -55,7 +55,7 @@ describe("Search component", () => {
   it("Start and end year filter should infer query parameters", async () => {
     const { getByPlaceholderText } = renderWithProviders(
       <SearchComponent
-        initialEntries={["/search?q=spacex&startYear=2021&endYear=2023"]}
+        initialEntries={["/?q=spacex&startYear=2021&endYear=2023"]}
       />,
       { store }
     );

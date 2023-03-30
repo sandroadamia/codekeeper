@@ -23,6 +23,7 @@
     "types": ["node", "vite/client"]
   },
   "include": [
-    "src"
+    "src",
+    "src/mocks/data/*.json"
   ]
 }

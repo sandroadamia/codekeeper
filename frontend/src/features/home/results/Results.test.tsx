@@ -22,7 +22,7 @@ const ResultsComponent = ({
 describe("Results component", () => {
   it("Given a search term masonry grid should have a list of items", async () => {
     const { getByTestId } = renderWithProviders(
-      <ResultsComponent initialEntries={["/search?q=spacex&endYear=2023"]} />,
+      <ResultsComponent initialEntries={["/?q=spacex&endYear=2023"]} />,
       { store }
     );
 
@@ -35,7 +35,7 @@ describe("Results component", () => {
   it("Change posts per page drop down should display relevant number of items", async () => {
     const { getByTestId } =
       renderWithProviders(
-        <ResultsComponent initialEntries={["/search?q=spacex&endYear=2023"]} />,
+        <ResultsComponent initialEntries={["/?q=spacex&endYear=2023"]} />,
         { store }
       );
 
@@ -53,7 +53,7 @@ describe("Results component", () => {
   it("Change posts per page drop down value should be inferred from query parameter", async () => {
     const { getByTestId } = renderWithProviders(
       <ResultsComponent
-        initialEntries={["/search?q=spacex&endYear=2023&postsPerPage=25"]}
+        initialEntries={["/?q=spacex&endYear=2023&postsPerPage=25"]}
       />,
       { store }
     );
@@ -66,7 +66,7 @@ describe("Results component", () => {
   it("Next page button should page through results", async () => {
     const { getByTestId, getByText } = renderWithProviders(
       <ResultsComponent
-        initialEntries={["/search?q=spacex&endYear=2023&postsPerPage=25"]}
+        initialEntries={["/?q=spacex&endYear=2023&postsPerPage=25"]}
       />,
       { store }
     );
@@ -79,7 +79,7 @@ describe("Results component", () => {
     });
     await waitFor(() => {
       expect(getByTestId("masonry").children[0].innerHTML).toContain(
-        "Koichi Wakata SpaceX Training"
+        "CCP Astronauts Tour SpaceX Facility"
       );
     });
   });
