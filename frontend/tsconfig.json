@@ -20,7 +20,7 @@
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
     "composite": true,
-    "types": ["node", "vite/client"]
+    "types": ["node", "vite/client", "@testing-library/jest-dom"]
   },
   "include": [
     "src",
