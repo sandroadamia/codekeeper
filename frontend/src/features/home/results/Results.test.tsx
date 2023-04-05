@@ -33,11 +33,10 @@ describe("Results component", () => {
   });
 
   it("Change posts per page drop down should display relevant number of items", async () => {
-    const { getByTestId } =
-      renderWithProviders(
-        <ResultsComponent initialEntries={["/?q=spacex&endYear=2023"]} />,
-        { store }
-      );
+    const { getByTestId } = renderWithProviders(
+      <ResultsComponent initialEntries={["/?q=spacex&endYear=2023"]} />,
+      { store }
+    );
 
     await waitFor(() => {
       expect(getByTestId("change-posts-per-page")).toBeInTheDocument();
